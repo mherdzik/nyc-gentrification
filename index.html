@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>Gentrification</title>
+<style>
+BODY {
+  width: 100%;
+	background: #efe;
+	color: #222;
+    margin: 10;
+	font-family: 'Times New Roman';
+	line-height: 2em;
+}
+
+DT {
+	font-weight: bold;
+	margin-top: .33em;
+    margin-left: 1.6em;
+}
+DD {
+    margin-top: .33em;
+    margin-left: 3em;
+}
+
+H2 {
+    text-align: center;
+	color: #000;
+	margin-left: 0em;
+}
+
+H3 {
+	color: #000;
+	margin-left: 1em;
+}
+
+p {
+  margin-left: 2.5em;
+}
+footernote {
+    color: #000;
+    margin-left: 1em;
+}
+.banner-divider {
+  position: relative;
+  background: #aaffaa;
+  height: 50px;
+}
+
+.content {
+  width: 960px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+}
+
+.inner-content {
+  padding: 0px 80px 40px 40px;
+}
+
+.editsection {
+	display: none;
+}
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 49.5%;
+    padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+</style>
+</head>
+<body>
+<div class="content">
+<div class="banner-divider"></div>
+<div class="inner-content">
+    <!-- Start of body -->
+    <h2><u>A Study of Gentrification</u></h2>
+ 
+    <img src="images/dtxe.rent2br-cr.png" alt="Time Series Graph Depicting Rent of a Two Bedroom Apartment over the years 2006-2019" width="630" height="400">
+    <br />
+
+    <h3><u>Introduction</u></h3>
+
+    <p>
+        Gentrification is a phenomenon in which the rising price of housing displaces indigenous communities. 
+    </p>
+
+    <p>
+        Put shortly, this results in segregation. As the price of housing rises,
+        wealthy people from privileged backgrounds are given exclusive access to desirable neighborhoods,
+        increasing demand for housing while lowering supply. Disadvantaged people are then dislocated
+        and forced to move to less desirable and more affordable areas that aren’t as ripe with economic opportunity.
+        This causes feedback loops in which crime increases and businesses close,
+        dooming people to live in these areas that are colloquially identified as ghettos.
+    </p>
+
+    <h3><u>Background</u></h3>
+
+    <p>
+        The purpose of this study is to observe the variability in the price of housing,
+        as well as other data fields that may be potential factors or externalities.
+        The independent analyses will be done as functions of time so that anomalies 
+        may be identified and contextualized by historical occurrences.
+        Comparisons will then be done accordingly.
+    </p>
+
+    <dt>
+        The scope of this study will be restricted to the five counties of New York City:
+    </dt>
+
+    <dd>
+        <ul>
+            <li>Queens County, the borough of Queens</li>
+            <li>Bronx County, the borough of The Bronx</li>
+            <li>Kings County, also known as the Borough of Brooklyn</li>
+            <li>New York County, also known as the Borough of Manhattan</li>
+            <li>Richmond County, also known as the Borough of Staten Island</li>
+        </ul>
+    </dd>
+
+    <dt>
+        The data that will be observed and analyzed consists of:
+    </dt>
+    
+    <dd>
+        <ol>
+            <li>General Rent Data</li>
+            <li>House Price Data</li>
+            <li>Race / Ethnic Data</li>
+            <li>Crime Data</li>
+            <li>Salary Data</li>
+            <li>Employment Data</li>
+        </ol>
+    </dd>
+        
+    <h3><u>Contextualizing The Data</u></h3>
+
+    <p>
+        The time period studied will be the years 2006 through 2019, the datasets each span
+        different periods of time and this range is one they each have in common,
+        with exception to Manhattan’s Housing Price Index (HPI) data from the years 2016 onwards.
+        For reasons later described, this will not have an effect on the study.
+    </p>
+
+    <p>
+        The Financial Crisis and Hurricane Sandy are two significant phenomena
+        that can justify the anomalous behavior that takes place in 2008 and 2013
+        respectively. If the scope were to be expanded, it would be reasonable to
+        expect the Tech Bubble and the 9/11 terrorist attack to also have significant and visible impacts on the data.
+    </p>
+
+    <p>
+        The Covid-19 pandemic, and government reaction to it, has had immense influence on
+        the any available data and has rendered it mostly useless for this analysis. Therefore,
+        data collected after 2019 will be discarded or dismissed. There are however, interesting
+        observations that can be made studying the impact of an absolute welfare state on life in New York City.
+    </p>
+
+    <p>
+        Inflation is a significant factor that makes it very difficult to make immediate
+        comparisons, therefore it is critical to frame the data and analysis in a manner
+        such that inflation distorts the information minimally. This means that comparisons
+        between datasets should only be made within that same year, and overarching conclusions
+        should only be made after financial data is normalized in respect to inflation.
+    </p>
+
+    <p>
+        Relative Population is another important factor that distorts data that is presented in
+        a manner that portrays total occurrences. Therefore it is important to convert that data
+        so that it is quantified per capita when making direct comparisons. Staten Island’s population
+        is approximately a third of the size of the next least populated county,
+        suggesting comparisons will be difficult to make and possibly inconclusive.
+    </p>
+
+    <dt>
+        Population of the five counties, as of 2020, per Wikipedia.
+    </dt>
+
+    <dd>
+        <ul>
+            <li>New York County: 1,694,251</li>
+            <li>Richmond County: 495,747</li>
+            <li>Queens County: 2,405,464</li>
+            <li>Bronx County: 1,472,654</li>
+            <li>Kings County: 2,736,074</li>
+        </ul>
+    </dd>
+
+    <h3><u>Initial Analysis and Visualizations</u></h3>
+
+    <dt>Median Salary per Borough</dt>
+    <img src="images/dtxe.salary-cr.png" alt="TIme Series Graph of salary changes in each of the five boroughs over the years 2006-2019" width="630" height="400">
+    <h3>Total Amount of Jobs per Borough</h3>
+    <img src="images/dtxe.employment-cr.png" alt="Time Series Graph of cumulative employment in each of the five boroughs over the yeras 2006-2019" width="630" height="400">
+    <dt>Total Crime per Borough</dt>
+    <img src="images/dtxe.totalcrime-cr.png" alt="Time Series Graph of total crime in each of the five boroughs over the years 2006-2019" width="630" height="400">
+    <dt>Total Violent Crime per Borough</dt>
+    <img src="images/dtxe.violentcrime-cr.png" alt="Times Series Graph of violent crime in each of the five boroughs over the years 2006-2019" width="630" height="400">
+    <dt>Total Property Crime per Borough</dt>
+    <img src="images/dtxe.propertycrime-cr.png" alt="Times Series Graph of property crime in each of the five boroughs over the years 2006-2019" width="630" height="400">
+
+    <h3><u>Initial Observations</u></h3>
+
+    <P>
+        Staten Island seems to be incredibly anomalous, featuring both lower earnings and lower crime.
+        This radical difference can most likely be attributed to the difference in population size.
+        One may wonder if this data is more comparable to that of New Jersey’s counties rather than
+        other boroughs in New York City. Due to this stark difference in data, Richmond County will be excluded from further analysis.
+    </P>
+
+    <p>
+        Manhattan is interesting in that it is home to the highest earning New Yorkers, has the most
+        expensive housing, and employs the most people despite ranking third among the counties in terms
+        of population. This may be explained anecdotally rather than analytically. Manhattan is better
+        suited for business fronts rather than housing, as seen with Broadway and Wallstreet, leading
+        one to view Manhattan as an epicenter of business and commerce rather than an independent and
+        isolated environment that could be directly compared to its neighboring counties. A significant
+        extrapolation, assuming this line of reasoning is correct, is that the employment opportunities
+        available in Manhattan are shared by the surrounding counties. While important in contextualizing
+        the socio-economic dynamic of gentrification, outside of being described as “very expensive and unattainable”
+        there is little more information to be understood or observed in respect to Manhattan as a residential area. 
+    </p>
+        
+    <p>
+        Judging from the preliminary observations, Bronx will be the prime environment for studying the effects of
+        gentrification. The substantial shift in its ethnic demographic depict a phenomenon referred to as ‘white
+        flight’ with roots that directly relate to the idea of gentrification, crime, and segregation.
+    </p>
+
+    <h3><u>Further Analysis</u></h3>
+
+    <h3><u>Conclusions</u></h3>
+
+    <h3><u>Production</u></h3>
+
+    <dt><a href="/gentrification/dtxe.datacleaning.html" target="_blank">Data Cleaning</a> </dt>
+    <dt><a href="/gentrification/dtxe.visualization.html" target="_blank">Sample Visualization Generators</a> </dt>
+
+
+
+    <!-- Resources Sub  -->
+
+    <h2><u>Resources</u></h2>
+    <h3><u>Data</u></h3>
+    <dd>
+        <a href="https://data.ny.gov/Economic-Development/Quarterly-Census-of-Employment-and-Wages-Annual-Da/shc7-xcbw">Employment Status </a>      <br />
+        <a href="https://www.census.gov/library/stories/state-by-state/new-york-population-change-between-census-decade.html">Racial/Ethnic Demographics </a>      <br />
+        <a href="https://www.rentdata.org/states/new-york/2022">Rent Data </a>      <br />
+        <a href="https://data.ny.gov/Public-Safety/Index-Crimes-by-County-and-Agency-Beginning-1990/ca8h-8gjq">Crime Rates  </a>      <br />
+        <a href="https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx"> House Pricing Index</a> <br />
+    </dd>
+    <h3><u>References</u></h3>
+    <dd>
+        This project was further adapted from a hastily assembled <a href="/gentrification/draft.html" target="_blank">project</a> ( 12/10/2021 ) <br />
+        This .html is built off a template originally originally attributed to <a href="http://teamsalvato.com/">Team Salvato</a>.       <br />
+        The visualizations were produced by and exported from jupyter-lab <br/>
+        The code, and its html portrayal, was exported from jupyter-lab <br />
+        Geojson county borders provided by <a href="https://eric.clst.org/tech/usgeojson/">Eric Celeste</a>.                <br />
+        Geojson zip code borders provided by <a href="https://github.com/OpenDataDE/State-zip-code-GeoJSON">enactdev</a>   .           <br />
+        Supreme Court verdict on <a href="https://www.supremecourt.gov/opinions/20pdf/21a23_ap6c.pdf">Rent Moratorium</a> (pdf). <br />
+    </dd>
+
+
+    <!-- End of body -->
+
+</div>
+<div class="banner-divider"></div>
+</div>
+</body>
+</html>
